@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap");
+body
+{
+    background-color: #fafafa;
+
+}
+.navbar-inner{
+    width: 100px;
+}
+.navbar-inner img{
+    width: 100px;
+}
+nav
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+
+}
+form .form-control, .btn
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+}
+footer
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+}
+
+footer h6
+{
+    font-family:'Heebo', sans-serif;
+
+    font-weight: bolder;
+}
