@@ -24,9 +24,10 @@ function sortData(datos) {
     } else {
         datos.sort((a, b) => b.nombre.localeCompare(a.nombre));
     }
-
+    mostrarDatos(datos);
+}
+function mostrarDatos(datos=usuarios){
     tabla.innerHTML = "";
-
     datos.forEach(usuario => {
         const fila = document.createElement("div");
         fila.classList.add("row", "mb-4", "border-bottom", "pb-2");
@@ -72,10 +73,13 @@ searchBox.addEventListener("input", function() {
     const idBuscado = parseInt(searchBox.value); 
     const usuarioEncontrado = [usuarios.find(usuario => usuario.id === idBuscado)];
     tabla.innerHTML = "";
+    if (searchBox.value === ""){
+        window.location.reload()
+    }
     if (usuarioEncontrado) {
-        sortData(usuarioEncontrado);
+        mostrarDatos(usuarioEncontrado);
     } else {
-        tabla.innerHTML = "";
+        tabla.innerHTML = "No se encontró ningún usuario con ese ID";
     }
     details(idBuscado)
 });
@@ -132,5 +136,5 @@ function details(id){
 
 
  
-sortData(usuarios);
+mostrarDatos()
 details(10)
