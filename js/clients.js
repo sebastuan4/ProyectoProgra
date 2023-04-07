@@ -1,15 +1,15 @@
 const usuarios = [
-    { nombre: "Sebastian Alvarado Rojas", email: "sebastuan4@gmail.com", id: 1, fechaNacimiento: "01/11/2001", genero:"Masculino",tipoPlan:"Telefono e internet",proximoPago:"7/4/2023",moroso:"no"},
-    { nombre: "María Fernanda Pérez", email: "mariafp@gmail.com", id: 2, fechaNacimiento: "15/06/1995", genero:"Femenino",tipoPlan:"Cable e internet",proximoPago:"12/4/2023",moroso:"no"},
-    { nombre: "Pedro Contreras Gutiérrez", email: "pedrocg@hotmail.com", id: 3, fechaNacimiento: "10/02/1989", genero:"Masculino",tipoPlan:"Cable y Teléfono",proximoPago:"10/4/2023",moroso:"no"},
-    { nombre: "Ana Karenina Vázquez", email: "anakvzqz@gmail.com", id: 4, fechaNacimiento: "28/11/1978", genero:"Femenino",tipoPlan:"Internet",proximoPago:"20/4/2023",moroso:"no"},
-    { nombre: "Santiago Ramírez Ortega", email: "sramirez@outlook.com", id: 5, fechaNacimiento: "02/09/2000", genero:"Masculino",tipoPlan:"Cable e internet",proximoPago:"9/4/2023",moroso:"no"},
-    { nombre: "Laura González Morales", email: "lauragm@hotmail.com", id: 6, fechaNacimiento: "12/07/1992", genero:"Femenino",tipoPlan:"Cable Telefono e internet",proximoPago:"5/4/2023",moroso:"si"},
-    { nombre: "Juan Carlos Torres", email: "juantorres@gmail.com", id: 7, fechaNacimiento: "22/03/1975", genero:"Masculino",tipoPlan:"Cable e internet",proximoPago:"8/4/2023",moroso:"no"},
-    { nombre: "Valentina Torres", email: "valentinatorres@gmail.com", id: 8, fechaNacimiento: "05/01/2005", genero:"Femenino",tipoPlan:"Telefono e internet",proximoPago:"15/4/2023",moroso:"no"},
-    { nombre: "Ricardo Hernández", email: "ricardohdz@yahoo.com", id: 9, fechaNacimiento: "19/12/1984", genero:"Masculino",tipoPlan:"Cable y Teléfono",proximoPago:"14/4/2023",moroso:"no"},
-    { nombre: "Alicia García", email: "aliciagar@yahoo.com", id: 10, fechaNacimiento: "30/05/1972", genero:"Femenino",tipoPlan:"Internet",proximoPago:"30/4/2023",moroso:"no"},
-    { nombre: "Andrés Pérez", email: "andrespz@gmail.com", id: 11, fechaNacimiento: "08/08/1998", genero:"Masculino",tipoPlan:"Cable Telefono e internet",moroso:"no"}
+    { nombre: "Sebastian Alvarado Rojas", email: "sebastuan4@gmail.com", id: 1, fechaNacimiento: "01/11/2001", genero:"Masculino",tipoPlan:"Telefono e internet",proximoPago:"7/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/eb/90/5d/eb905dce4c5e67259d5e324d682ec801.jpg"},
+    { nombre: "María Fernanda Pérez", email: "mariafp@gmail.com", id: 2, fechaNacimiento: "15/06/1995", genero:"Femenino",tipoPlan:"Cable e internet",proximoPago:"12/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/bb/29/f4/bb29f4c0e65e7a1aef5d256e12ffaf21.jpg"},
+    { nombre: "Pedro Contreras Gutiérrez", email: "pedrocg@hotmail.com", id: 3, fechaNacimiento: "10/02/1989", genero:"Masculino",tipoPlan:"Cable y Teléfono",proximoPago:"10/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/53/73/86/537386abac75390708597abefab87b7b.jpg"},
+    { nombre: "Ana Karenina Vázquez", email: "anakvzqz@gmail.com", id: 4, fechaNacimiento: "28/11/1978", genero:"Femenino",tipoPlan:"Internet",proximoPago:"20/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/03/59/49/03594965c55a6a661e98c836cab70ee9.jpg"},
+    { nombre: "Santiago Ramírez Ortega", email: "sramirez@outlook.com", id: 5, fechaNacimiento: "02/09/2000", genero:"Masculino",tipoPlan:"Cable e internet",proximoPago:"9/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/35/16/6e/35166eda618a1fc0bf913e32dfb45a94.jpg"},
+    { nombre: "Laura González Morales", email: "lauragm@hotmail.com", id: 6, fechaNacimiento: "12/07/1992", genero:"Femenino",tipoPlan:"Cable Telefono e internet",proximoPago:"5/4/2023",moroso:"si", imagen:"https://i.pinimg.com/236x/8c/85/c2/8c85c2a8cab045de80ba6dcc78614217.jpg"},
+    { nombre: "Juan Carlos Torres", email: "juantorres@gmail.com", id: 7, fechaNacimiento: "22/03/1975", genero:"Masculino",tipoPlan:"Cable e internet",proximoPago:"8/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/a0/3c/22/a03c2286cb754d14d953c6b590d9787b.jpg"},
+    { nombre: "Valentina Torres", email: "valentinatorres@gmail.com", id: 8, fechaNacimiento: "05/01/2005", genero:"Femenino",tipoPlan:"Telefono e internet",proximoPago:"15/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/c5/bb/6e/c5bb6e4cdf6c37c71979172fc601511d.jpg"},
+    { nombre: "Ricardo Hernández", email: "ricardohdz@yahoo.com", id: 9, fechaNacimiento: "19/12/1984", genero:"Masculino",tipoPlan:"Cable y Teléfono",proximoPago:"14/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/e5/66/31/e56631fa1cf153ba6ac23d0b2aaf4bc3.jpg"},
+    { nombre: "Alicia García", email: "aliciagar@yahoo.com", id: 10, fechaNacimiento: "30/05/1972", genero:"Femenino",tipoPlan:"Internet",proximoPago:"30/4/2023",moroso:"no", imagen:"https://i.pinimg.com/236x/db/13/04/db1304f8f3a3f85181feaeb4ec3458bc.jpg"},
+    { nombre: "Andrés Pérez", email: "andrespz@gmail.com", id: 11, fechaNacimiento: "08/08/1998", genero:"Masculino",tipoPlan:"Cable Telefono e internet",moroso:"no",imagen:"https://i.pinimg.com/236x/93/42/cf/9342cf5826a41a443d853681f367c32e.jpg"}
 ];
 
 const sortBtn = document.getElementById("sort-btn");
@@ -38,7 +38,7 @@ function mostrarDatos(datos=usuarios){
         const img = document.createElement("img");
         img.classList.add("rounded-circle", "shadow-4-strong");
         img.setAttribute("alt", "avatar");
-        img.setAttribute("src", "img/user.png");
+        img.setAttribute("src", `${usuario.imagen}`);
         img.style.width = "65px";
 
         col1.appendChild(img);
@@ -91,7 +91,8 @@ function details(id){
         const divCliente = document.createElement("div");
         divCliente.classList.add("cliente");
         const img = document.createElement("img");
-        img.setAttribute("src", "img/User.png");
+        img.classList.add("rounded-circle", "shadow-4-strong");
+        img.setAttribute("src", `${cliente.imagen}`);  
         img.setAttribute("alt", "");
         img.style.width = "150px";
         img.style.margin = "5%";
@@ -137,4 +138,4 @@ function details(id){
 
  
 mostrarDatos()
-details(10)
+details(1)
