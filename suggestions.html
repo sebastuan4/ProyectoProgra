@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Inserte Titulo</title>
+    <title>Tickets REKTR </title>
   </head>
   <body>
     <!-- Navbar -->
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="suppliers.html">Proveedores</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="suggestions.html">Sugerencias<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="suggestions.html">Tickets<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -44,8 +44,84 @@
         </div>
     </nav>
     <!--  --------------------↓ Aqui va el contenido ↓  -------------------->
- 
+    <section>
+        <head>
+            <title>Nuevo ticket</title>
+            
+          </head>
+        <form  action="procesar_formulario.php" method="post" onsubmit="mostrarMensaje(event)">
+            <h1 class="text-center">Ticket nuevo:</h1>
+            <div class="form-group">
+              <label for="id">ID:</label>
+              <input type="text" class="form-control" id="id" name="id" required>
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre del cliente:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="opciones">Seleccione el departamento al que va dirigido:</label>
+                <select class="form-control" id="opciones">
+                  <option value="opcion1">Departamento TI</option>
+                  <option value="opcion2">Departamento Financiero</option>
+                  <option value="opcion3">Departamento Administrativo</option>
+                  <option value="opcion4">Soporte Tecnico</option>
+                </select>
+              </div>
 
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          
+          <script>
+          function mostrarMensaje(event) 
+          {
+            event.preventDefault(); // evita el envío del formulario
+            alert("Ticket cargado");
+            window.location.href = "suggestions.html"; // redirige a la página principal
+          }
+          </script>
+
+        <!--  --------------------↓ Tickets precargardos ↓  -------------------->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo electrónico</th>
+            <th>Departamento</th>
+            <th>Mensaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sebastian Alvarado Rojas</td>
+            <td>sebastuan4@gmail.com</td>
+            <td>Soporte Tecnico</td>
+            <td>El cliente solicita un fallo en su servicio de TV</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>María Fernanda Pérez</td>
+            <td>janesmith@example.com</td>
+            <td>Departamento Financiero</td>
+            <td>El cliente solicita saber cuando es que se le vence el contrato de TV e internet</td>
+          </tr>
+
+    </section>
+    
+      
+          <!-- Agrega aquí más filas para mostrar más tickets cargados -->
+        </tbody>
+      </table>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-0 border-bottom"></section>

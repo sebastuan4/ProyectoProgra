@@ -30,6 +30,31 @@ footer
 footer h6
 {
     font-family:'Heebo', sans-serif;
-
     font-weight: bolder;
+}
+
+section
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+}
+
+form h1
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+}
+
+thead
+{
+    font-family:'Heebo', sans-serif;
+    font-weight: bolder;
+    color:#1956B4 ;
+}
+
+/*form de tickets*/
+
+.btn-primary 
+{
+    background-color: #1956B4;
 }
