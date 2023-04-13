@@ -58,3 +58,11 @@ thead
 {
     background-color: #1956B4;
 }
+
+/* index*/
+
+canvas {
+    width: 100%;
+    height: auto;
+  }
+
