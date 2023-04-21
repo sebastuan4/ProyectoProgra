@@ -59,10 +59,26 @@ thead
     background-color: #1956B4;
 }
 
+
+#ticket_form
+{
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+#btn_ticket
+{
+    margin-bottom: 10px;
+
+}
+
+
+
 /* index*/
 
-canvas {
+canvas 
+{
     width: 100%;
     height: auto;
-  }
+}
 
