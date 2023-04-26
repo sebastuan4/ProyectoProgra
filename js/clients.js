@@ -18,6 +18,10 @@ let ordenAscendente = true;
 const tabla = document.getElementById("tabla");
 const tabla2 = document.getElementById("info")
 
+
+
+
+
 function sortData(datos) {
     if (ordenAscendente) {
         datos.sort((a, b) => a.nombre.localeCompare(b.nombre));
@@ -63,6 +67,8 @@ function mostrarDatos(datos=usuarios){
     });
 }
 
+
+
 sortBtn.addEventListener("click", function() {
     sortData(usuarios);
     ordenAscendente = !ordenAscendente;
@@ -83,6 +89,9 @@ searchBox.addEventListener("input", function() {
     }
     details(idBuscado)
 });
+
+
+
 
 function details(id){
     const usuario = [usuarios.find(usuario => usuario.id === id)];
@@ -135,7 +144,38 @@ function details(id){
 }
 
 
-
  
 mostrarDatos()
 details(1)
+
+// Función para validar el formulario
+function validateForm() {
+    var form = document.getElementById("register-form");
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    form.classList.add("was-validated");
+  }
+  
+  // Función para enviar los datos del formulario al servidor
+  function submitForm() 
+  {
+    // Obtener los datos del formulario
+    var nombre = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var birthDate = document.getElementById("birth-date").value;
+    var address = document.getElementById("address").value;}
+  
+    // Enviar los datos del formulario al servidor usando AJAX
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+        // Mostrar un mensaje de éxito al usuario
+        alert("El cliente ha sido registrado exitosamente.");
+        // Reiniciar el formulario
+        document.getElementById("register-form").reset
+    }}

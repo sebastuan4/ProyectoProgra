@@ -130,6 +130,7 @@ function details(idProv){
 
 
 
+
  
 mostrarDatos2()
 details(1)

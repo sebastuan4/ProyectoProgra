@@ -81,4 +81,27 @@ canvas
     width: 100%;
     height: auto;
 }
+/* form de agregar cliente*/
+#agregarClienteForm
+{
+    margin-right: 300px;
+    margin-left: 50px;
+}
 
+#registerClient_btn
+{
+    margin-bottom: 10px;
+}
+
+/* form de agregar proveedor*/
+
+#formulario_Proveedor
+{
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+#registerSuppliers_btn
+{
+    margin-bottom: 10px;
+}
